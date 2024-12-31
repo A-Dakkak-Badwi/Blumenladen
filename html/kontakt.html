@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Blumenladen</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <div id="wrapper">
+        <header>
+            <div id="signetBox">
+                <img src="../images/signet.png" alt="Signet Blumenladen">
+            </div>
+            <h1>Flora - Der Blumenladen</h1>
+            <h2>"Zu jeder Gelegenheit die passenden Dornen"</h2>
+        </header>
+        <nav>
+            <ul id="mainNav">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="bilder.html">Bilder</a>
+                    <ul class="subNav">
+                        <li><a href="bilder_1.html">Bilder 1</a></li>
+                        <li><a href="#">Bilder 2</a></li>
+                        <li><a href="#">Bilder 3</a></li>
+                        <li><a href="#">Bilder 4</a></li>
+                    </ul>
+                </li>
+                <li></li>
+                <li><span>Kontakt</span></li>
+                <li><a href="impressum.html">Impressum</a></li>
+            </ul>
+        </nav>
+        <main>
+            <h2>Kontakt</h2>
+            <fieldset>
+                <legend> Kontaktformular</legend>
+                <form action="#" method="post">
+
+                    <div id="genderBox">
+                        <input type="radio" name="geschlecht" placeholder="weiblich" id="weiblich" required>
+                        <label for="weiblich">Weiblich</label>
+                        <input type="radio" name="geschlecht" placeholder="mänlich" id="mänlich" required>
+                        <label for="mänlich">Mänlich</label>
+                        <input type="radio" name="geschlecht" placeholder="divers" id="divers" required>
+                        <label for="divers">Divers</label>
+                    </div>
+
+                    <label for="vorname">Vorname:</label>
+                    <input type="text" name="vorname" placeholder="Vorname" id="vorname" title="Vorname" required
+                        oninvalid="this.setCustomValidity('Gib hier Vorname')">
+                    <label for="nachname">Nachname:</label>
+                    <input type="text" name="nachname" placeholder="Nachname" id="nachname" title="Nachname" required
+                        oninvalid="this.setCustomValidity('Gib hier Nachname')">
+                    <label for="email">E-Mail:</label>
+                    <input type="email" name="email" placeholder="E-Mail" id="email" title="E-Mail" required
+                        oninvalid="this.setCustomValidity('Gib hier E-Mail')">
+
+                    <label for="grund">Grund:</label>
+                    <select name="grund" id="grund">
+                        <option value="Lob">Lob</option>
+                        <option value="Tadel">Tadel</option>
+                        <option value="Anregung">Anregung</option>
+                        <option value="None" selected disabled hidden>auswählen</option>
+                    </select>
+
+                    <label for="text">Nachricht:</label>
+                    <textarea name="text" id="text" placeholder="Nachricht" title="Nachricht" required
+                        maxlength="150"></textarea>
+
+                    <div id="newsBox">
+                        <input type="checkbox" name="newsletter" placeholder="Newsletter" id="newsletter"
+                            title="Newsletter" value="ConfirmNewsletter" required>
+                        <label for="newsletter">Ich möchte den Newsletter erhalten</label>
+                    </div>
+
+                    <div id="buttonBox">
+                        <input type="submit" name="submit" value="Absenden">
+                        <input type="reset" name="reset" value="zurücksetzen">
+                    </div>
+
+                </form>
+            </fieldset>
+        </main>
+        
+        <footer>
+            <address>2024 &copy; <a href="#" alt="Verweis Kurs">Kurs LF10a</a></address>
+        </footer>
+    </div>
+
+</body>
+
+</html>
