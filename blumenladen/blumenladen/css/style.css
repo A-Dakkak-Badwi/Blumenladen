@@ -1,0 +1,430 @@
+@import url('stylesheet.css');
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+i, em {
+    font-family: 'LoraItalic';
+}
+
+b, strong {
+    font-family: 'LoraBold';
+}
+
+a, span, blockquote, cite, li, address, p, label, legend {
+    font-family: 'LoraRegular';
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+#wrapper {
+    width: 1200px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+
+header {
+    flex: 0 0 150px;
+    width: 100%;
+}
+
+nav {
+    flex: 0 0 45px;
+    width: 100%;
+}
+
+main {
+    flex: 1 1 auto;
+    width: 100%;
+}
+
+footer {
+    flex: 0 0 35px;
+    width: 100%;
+}
+
+body {
+    background-color: #B0C4B1;
+    background-image: url('../images/background.webp');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Kopfbereich */
+header {
+    position: relative;
+    background-color: rgba(237, 175, 184, 0.7);
+    border: 1px solid #4a5759;
+    border-radius: 0 0 20px 20px;
+    margin-bottom: 15px;
+}
+
+#signetBox {
+    position: absolute;
+    left: 510px;
+    width: 180px;
+    height: 180px;
+    border: 1px solid #4A5759;
+    background-color: #DEDBD2;
+    border-radius: 90px;
+}
+
+#signetBox img {
+    position: relative;
+    top: 10px;
+    left: 3px;
+    width: 180px;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+#signetBox img:hover {
+    transform: translateY(-5px);
+}
+
+header h1 {
+    position: absolute;
+    left: 25px;
+    top: 25px;
+    font-family: 'Arizonia';
+    font-size: 42px;
+    color: #15444b;
+    text-shadow: 1px 1px 1px rgb(237, 175, 184);
+    
+}
+
+header h2 {
+    position: absolute;
+    right: 25px;
+    bottom: 15px;
+    font-family: 'Arizonia';
+    font-size: 26px;
+    color: #15444b;
+}
+
+/* Navigation */
+nav {
+    border-radius: 20px;
+    margin-bottom: 15px;
+    border: 1px solid rgb(74, 87, 89);
+    background-color: rgba(176, 196, 177, 0.7);
+}
+
+nav #mainNav {
+
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    margin-left: -40px;
+}
+
+nav #mainNav li {
+
+    position: relative;
+    height: 100%;
+    border-left: 1px solid rgb(74, 87, 89);
+}
+
+nav #mainNav li:last-child {
+
+    border-right: 1px solid rgb(74, 87, 89);
+}
+
+nav #mainNav li:nth-child(4) {
+    width: 100px;
+}
+
+nav #mainNav li a {
+
+    font-family: 'LoraBold';
+    font-size: 24px;
+    text-decoration: none;
+    padding: 7px 10px 0;
+    display:inline-block;
+    height: 100%;
+    color: rgb(74, 87, 89);
+
+}
+
+nav #mainNav li a:hover {
+    background-color: rgb(176, 196, 177);
+    text-shadow: 1px 1px 1px #F7E1D7;
+}
+
+nav #mainNav li a:visited {
+    color: rgb(74, 87, 89);
+}
+
+nav #mainNav li span {
+
+    font-family: 'LoraBold';
+    font-size: 24px;
+    padding: 7px 10px 0;
+    display:inline-block;
+    height: 100%;
+    background-color: rgb(176, 196, 177);
+    color: rgb(74, 87, 89);
+    text-shadow: 1px 1px 1px #F7E1D7;
+
+}
+
+nav #mainNav li .subNav {
+
+    position: absolute;
+    list-style-type: none;
+    background-color: rgba(176, 196, 177, 0.7);
+    padding: 0;
+    left: -1px;
+    top: -666px;
+   
+}
+
+nav #mainNav li:hover .subNav {
+    top: 100%;
+}
+
+nav #mainNav li .subNav li {
+
+    width: 120px;
+    margin: 0;
+    border: none;
+    padding: 4px 0;
+    border: 1px solid rgb(74, 87, 89);
+    border-top: none;
+
+}
+
+nav #mainNav li .subNav li a {
+    font-size: 22px;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/* Fußbereich */
+footer {
+    background-color: rgb(237, 175, 184);
+    border: 1px solid #4a5759;
+    border-radius: 20px 20px 0 0;
+    margin-top: 15px;
+}
+
+address {
+    width: 100%;
+    text-align: center;
+    font-style: normal;
+    font-size: 14px;
+    color: #4A5759;
+    padding-top: 8px;
+}
+
+address a {
+
+    color: #4A5759;
+    font-weight: bold;
+    text-decoration: none;
+
+}
+
+address a:hover {
+    color: #DEDBD2;
+    text-shadow: 1px 1px 1px #4a5759;
+}
+
+/* Hauptbereich */
+main {
+    background-color: rgba(237, 175, 184, 0.7);
+    border: 1px solid #4a5759;
+    border-radius: 20px;
+    padding: 25px;
+}
+
+
+
+main h1 {
+    font-size: 50px;
+    padding: 5px;
+    margin-bottom: 1.2em;
+    border-top: 1px solid #4a5759;
+    border-bottom: 1px solid #4a5759;
+    background-image: linear-gradient(to right, rgb(176, 196, 177), transparent);
+    font-family: 'Green Nature';
+}
+
+main h2 {
+    font-size: 46px;
+    color: black;
+    text-shadow: 1px 1px 1px rgb(176, 196, 177);
+    border-bottom: 1px solid #4a5759;
+    background-image: linear-gradient(to top, rgb(176, 196, 177), transparent);
+    margin-bottom: 1.2em;
+    padding-left: 5px;
+    font-family: 'Green Nature';
+}
+
+main h3 {
+    font-family: 'LoraBold';
+    font-size: 22px;
+    text-decoration: underline;
+    margin-bottom: 1em;
+}
+
+main h4 {
+    font-family: 'LoraBold';
+    font-size: 20px;
+}
+
+main p {
+    font-size: 16px;
+    line-height: 1.3em;
+    margin-bottom: 1.2em;
+
+}
+
+main p a {
+    color: black;
+}
+
+main p a:hover {
+    color: #4A5759;
+}
+
+div.zitat {
+    margin-bottom: 1.2em;
+}
+
+.zitat blockquote, .zitat cite {
+    font-family: 'Arizonia';
+}
+
+.zitat img {
+    display: block;
+    margin: 0 auto;
+    border: 1px solid rgb(176, 196, 177);
+    margin-bottom: 1.2em;
+}
+
+.zitat blockquote {
+    text-align: center;
+    font-size: 40px;
+    font-style: italic;
+}
+
+.zitat blockquote::before {
+    position: relative;
+    content: '\201C';
+    font-size: 35px;
+    display: inline-block;
+    margin-right: 10px;
+    top: 5px;
+}
+
+.zitat blockquote::after {
+    content: '\201D';
+    position: relative;
+    font-size: 35px;
+    display: inline-block;
+    margin-left: 5px;
+    top: 5px;    
+}
+
+.zitat cite {
+   
+    display: block;
+    text-align: center;
+    font-style: normal;
+    font-size: 25px;
+    padding-left: 460px;
+}
+
+main ul {
+    margin-bottom: 1.2em;
+    list-style-type: none;
+}
+
+main ul li {
+    font-family: Tahoma;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+main ul li::before {
+    position: relative;
+    content: '\21D2';
+    margin-right: 5px;
+    top: -1px;
+}
+
+/* Kontaktformular */
+fieldset {
+    border: 1px solid #4a5759;
+    width: 66%;
+}
+
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#genderBox {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+#genderBox label {
+    display: inline;
+}
+
+label {
+    display: inline-block;
+    width: 25%;
+}
+
+input[type="text"], input[type="email"], select, textarea {
+    width: 50%;
+    margin-bottom: 15px;
+}
+
+textarea {
+    height: 150px;
+    resize: none;
+}
+
+input[type="checkbox"] {
+    width: 20px;
+    margin-right: 5px;
+}
+
+label[for="newsletter"] {
+    display: inline;
+    width: auto;
+}
+
+#newsBox {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+
+input[type="submit"], input[type="reset"] {
+    width: 25%;
+    background-color: rgba(176, 196, 177, 0.7);
+    border: 1px solid #4A5759;
+}
+
+input[type="submit"]:hover, input[type="reset"]:hover {
+    background-color: rgb(176, 196, 177);
+}
+
